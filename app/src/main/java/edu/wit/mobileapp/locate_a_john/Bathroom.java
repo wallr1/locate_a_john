@@ -94,6 +94,12 @@ public class Bathroom {
         }
     }
 
+    public Bathroom (String name , LatLng loc , String city){
+        this.name = name;
+        this.loc = loc;
+        this.city = city;
+    }
+
     public void setLoc(LatLng loc){
         this.loc = loc;
     }
@@ -108,5 +114,13 @@ public class Bathroom {
 
     public String getName() {
         return name;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city){
+        this.city = city;
     }
 }
